@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 500" fill="none">
+  <defs>
+    <pattern id="basket-weave" width="17" height="16" patternUnits="userSpaceOnUse">
+      <path d="M0 5h17M8 5v11" stroke="#51483d" stroke-width="1.5" opacity=".21"/>
+    </pattern>
+  </defs>
+  <!-- A paper-colored clearing, with the edges left transparent. -->
+  <path d="M99 361C49 285 73 175 130 110C189 43 278 57 341 62C415 67 482 46 530 114C576 180 584 290 549 359C511 431 425 454 326 444C224 455 143 429 99 361Z" fill="#fbf7ee"/>
+  <path d="M121 339C95 275 120 175 170 128C221 79 303 88 346 91C415 95 473 95 511 152C546 206 547 297 519 346C463 404 181 415 121 339Z" fill="#edd79c" opacity=".19"/>
+  <path d="M132 354C202 337 260 351 312 346C400 337 456 333 522 357C553 369 546 397 500 411C403 441 212 429 138 403C98 389 97 366 132 354Z" fill="#678168" opacity=".13"/>
+  <g stroke="#51483d" stroke-linecap="round" stroke-linejoin="round">
+    <!-- A little orchard, drawn with slightly wandering outlines. -->
+    <path d="M139 344C144 304 143 255 148 213M145 279l-24-28M146 259l27-24" stroke-width="5"/>
+    <path d="M110 269C80 265 81 236 94 222C78 204 91 174 114 172C111 149 143 136 162 150C182 134 211 151 207 174C231 187 228 214 210 226C222 252 192 277 173 266C153 285 126 282 110 269Z" fill="#9eaf89" stroke="#678168" stroke-width="2"/>
+    <path d="M143 269l5-64m-3 38-25-23m27 6 24-23" stroke="#678168" stroke-width="2"/>
+    <path d="M476 339c-3-39 1-81-1-124m1 72 22-25m-23-1-21-26" stroke-width="5"/>
+    <path d="M445 264C424 273 405 250 417 231C394 215 402 184 426 180C418 156 442 135 464 146C482 121 511 140 511 160C538 156 552 185 536 205C558 227 536 255 516 251C502 280 472 282 456 261Z" fill="#b1be98" stroke="#678168" stroke-width="2"/>
+    <path d="M475 263c-4-31 0-58 5-84m-5 53-23-21m24 7 24-23" stroke="#678168" stroke-width="2"/>
+  </g>
+  <g fill="#bd4337">
+    <path d="M109 192c-13-7-21 7-14 17 6 10 14 9 20 1 8-10 4-23-6-18Z"/>
+    <path d="M188 224c-12-7-20 5-14 16 6 8 15 9 21 0 7-10 3-21-7-16Z"/>
+    <path d="M446 186c-12-7-19 7-13 16 6 9 15 8 21-1 6-10 2-20-8-15Z"/>
+    <path d="M520 222c-11-6-18 5-12 15 5 8 14 8 19-1 6-8 2-19-7-14Z"/>
+  </g>
+  <g stroke="#51483d" stroke-width="2.5" stroke-linecap="round">
+    <path d="m108 193 2-7m78 38 1-7m257-38 2-8m72 44 2-7"/>
+  </g>
+  <g stroke="#678168" stroke-width="2" stroke-linecap="round">
+    <path d="M97 355c-10-25-19-43-36-62m26 40c-14 1-24-7-24-18 11-2 23 5 24 18Z" fill="#9eaf89"/>
+    <path d="M77 315c3-14 1-25-8-31-8 7-6 21 8 31Z" fill="#b1be98"/>
+    <path d="M540 354c11-24 19-47 38-66m-25 37c15 3 26-4 28-15-12-4-23 2-28 15Z" fill="#9eaf89"/>
+    <path d="M566 303c-6-12-5-23 3-31 9 6 9 19-3 31Z" fill="#b1be98"/>
+  </g>
+  <ellipse cx="288" cy="382" rx="151" ry="18" fill="#51483d" opacity=".07"/>
+  <!-- The red apple leans toward its golden companion. -->
+  <path d="M241 204C204 178 165 195 150 232C134 272 146 329 171 361C192 389 219 394 244 383C267 397 295 384 315 356C338 322 348 269 330 231C312 195 279 185 253 204C249 208 246 208 241 204Z" fill="#bd4337" stroke="#9e382f" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M169 243c9-24 25-35 42-34" stroke="#f3c3a0" stroke-width="8" stroke-linecap="round" opacity=".68"/>
+  <path d="M161 264l-1 7" stroke="#f3c3a0" stroke-width="5" stroke-linecap="round" opacity=".68"/>
+  <path d="M274 371c19-10 36-32 44-56" stroke="#8f3029" stroke-width="2" stroke-linecap="round" stroke-dasharray="3 7" opacity=".5"/>
+  <path d="M247 207c-5-18-1-36 11-49" stroke="#51483d" stroke-width="10" stroke-linecap="round"/>
+  <path d="M249 185c-32 2-49-9-53-33 27-3 48 10 53 33Z" fill="#678168" stroke="#536e55" stroke-width="2"/>
+  <path d="m205 159 38 22" stroke="#b1be98" stroke-width="2" stroke-linecap="round"/>
+  <path d="M252 177c2-20 17-28 37-27-4 20-19 29-37 27Z" fill="#9eaf89"/>
+  <path d="m258 171 22-15" stroke="#678168" stroke-width="1.5" stroke-linecap="round"/>
+  <ellipse cx="184" cy="305" rx="15" ry="9" fill="#eaa18c" opacity=".75" transform="rotate(-8 184 305)"/>
+  <ellipse cx="278" cy="306" rx="15" ry="9" fill="#eaa18c" opacity=".75" transform="rotate(8 278 306)"/>
+  <g fill="#51483d">
+    <ellipse cx="204" cy="289" rx="4" ry="5"/>
+    <ellipse cx="259" cy="291" rx="4" ry="5"/>
+  </g>
+  <path d="M220 308c5 9 15 10 22 1" stroke="#51483d" stroke-width="3" stroke-linecap="round"/>
+  <!-- Uneven lobes and a honey-colored underside keep the second apple soft. -->
+  <path d="M369 235C342 215 310 227 295 257C280 290 287 335 307 364C325 391 348 398 369 388C389 398 413 389 432 366C454 338 466 295 453 265C439 231 407 217 382 235C377 238 373 239 369 235Z" fill="#edd79c" stroke="#c6a664" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M300 320c10 36 32 63 58 61 19 10 45-1 65-19-15 24-34 34-54 26-24 12-55-3-69-38Z" fill="#d9b778" opacity=".5"/>
+  <path d="M309 269c8-16 20-25 34-25" stroke="#fbf7ee" stroke-width="7" stroke-linecap="round" opacity=".8"/>
+  <path d="M374 237c5-18 5-31-2-44" stroke="#51483d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M377 215c10-25 32-32 56-23-12 22-30 30-56 23Z" fill="#678168" stroke="#536e55" stroke-width="2"/>
+  <path d="m384 212 37-14" stroke="#b1be98" stroke-width="2" stroke-linecap="round"/>
+  <g fill="#bd4337" opacity=".3">
+    <ellipse cx="318" cy="322" rx="13" ry="8" transform="rotate(-9 318 322)"/>
+    <ellipse cx="412" cy="325" rx="13" ry="8" transform="rotate(9 412 325)"/>
+  </g>
+  <g fill="#51483d">
+    <ellipse cx="338" cy="308" rx="3.8" ry="4.8"/>
+    <ellipse cx="391" cy="310" rx="3.8" ry="4.8"/>
+  </g>
+  <path d="M354 326c6 8 15 8 21-1" stroke="#51483d" stroke-width="3" stroke-linecap="round"/>
+  <path d="m430 340-3 6m-2-20-2 5m13-17-1 5" stroke="#c6a664" stroke-width="2" stroke-linecap="round"/>
+  <!-- A bentwood harvest basket. -->
+  <path d="M469 365c-8-44 1-64 23-63 23 1 34 21 29 60" stroke="#51483d" stroke-width="9" stroke-linecap="round"/>
+  <path d="M469 365c-8-44 1-64 23-63 23 1 34 21 29 60" stroke="#c6a664" stroke-width="5" stroke-linecap="round"/>
+  <path d="M464 344c-18-14-36 3-29 21 5 16 16 21 28 16 14 3 25-11 24-24-1-13-11-19-23-13Z" fill="#bd4337" stroke="#9e382f" stroke-width="2"/>
+  <path d="M497 337c-16-11-31 4-25 20 5 14 15 20 26 15 12 4 25-8 23-21-1-13-12-19-24-14Z" fill="#edd79c" stroke="#c6a664" stroke-width="2"/>
+  <path d="M527 351c-15-13-32 1-27 17 4 15 15 20 27 16 12 4 23-8 23-20-1-12-12-20-23-13Z" fill="#bd4337" stroke="#9e382f" stroke-width="2"/>
+  <path d="m461 346 1-11m35 4-2-10m32 23 3-11" stroke="#51483d" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M463 339c-12 1-18-4-20-12 11-1 18 2 20 12Zm67 8c3-10 12-14 21-11-4 10-10 12-21 11Z" fill="#678168"/>
+  <path d="m431 365 13 53c26 12 64 14 91 0l11-53Z" fill="#d4ae75" stroke="#98774d" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="m431 365 13 53c26 12 64 14 91 0l11-53Z" fill="url(#basket-weave)"/>
+  <path d="M429 362c37 8 79 8 118 0l-1 11c-39 9-79 9-115-1Z" fill="#edd79c" stroke="#98774d" stroke-width="2" stroke-linejoin="round"/>
+  <path d="m454 382 7 31m13-30 2 33m15-32v34m17-35-3 33m18-35-5 30" stroke="#fbf7ee" stroke-width="2" opacity=".4"/>
+  <g stroke="#678168" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M132 395c2-12 0-21-5-29m5 29c-9-12-13-15-19-16m21 15c3-10 9-17 16-21M190 416l-3-15m3 15 8-10m-9 10-9-7M389 416c-1-13 4-25 12-33m-12 33-10-16m9 15 16-14M554 401l7-21m-7 21-3-14" stroke-width="2.5"/>
+    <path d="M157 408c-2-12-2-24 3-36m-3 25c-11-1-17-8-17-14 11 0 17 6 17 14Z" fill="#9eaf89" stroke-width="2"/>
+    <path d="M421 398c1-10-2-23-8-33" stroke-width="2"/>
+  </g>
+  <g fill="#fbf7ee" stroke="#edd79c" stroke-width="1.2">
+    <path d="M160 372c-11 5-17-5-8-10-7-8 2-16 8-8 6-8 15-1 9 7 10 4 5 15-5 11Z"/>
+    <path d="M414 370c-8 5-15-2-8-8-6-7 1-14 7-8 6-7 14 0 8 7 8 4 3 13-7 9Z"/>
+    <path d="M562 382c-8 3-13-5-6-9-5-6 2-12 7-6 5-5 11 1 6 7 7 4 1 11-7 8Z"/>
+  </g>
+  <g fill="#edd79c">
+    <circle cx="160" cy="364" r="3.5"/>
+    <circle cx="414" cy="362" r="3"/>
+    <circle cx="562" cy="375" r="2.7"/>
+  </g>
+  <g stroke="#c6a664" stroke-width="1.5" stroke-linecap="round">
+    <path d="m218 416 7 1m13 1h3m81 1 9-1m11-1 4-1M111 115l3-7m-12 9-6-1m28 6 6 2"/>
+    <path d="M333 143c15-12 23-16 35-14" stroke-dasharray="2 6" opacity=".65"/>
+  </g>
+  <path d="M370 125c-10-13-19-2-7 5-3 14 11 16 11 1 13 6 17-8 3-7Z" fill="#edd79c"/>
+  <path d="m371 126-3 6" stroke="#51483d" stroke-width="2" stroke-linecap="round"/>
+</svg>
