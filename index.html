@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fbf7ee">
+  <meta name="description" content="ふじ、王林、紅玉など6種類のりんごを、甘み・酸味・食感でくらべる小さな図鑑。あなたのお気に入りのりんごを見つけましょう。">
+  <title>りんごの森 — あなたにぴったりの、ひとつを。</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#varieties">りんご図鑑へスキップ</a>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <symbol id="apple" viewBox="0 0 160 160">
+        <path d="M80 47Q73 28 82 18" fill="none" stroke="#70513a" stroke-width="7" stroke-linecap="round"/>
+        <path d="M84 33Q91 9 119 19Q112 41 84 33" fill="#72825b"/>
+        <path d="M81 47C42 21 15 52 24 93C30 124 48 146 79 135C108 147 133 119 138 88C145 47 115 24 81 47Z" fill="currentColor"/>
+        <path d="M43 58Q32 69 36 83" fill="none" stroke="#fff9e9" stroke-width="7" stroke-linecap="round" opacity=".55"/>
+        <path d="M115 63Q127 88 114 111" fill="none" stroke="#713e2e" stroke-width="2" opacity=".13"/>
+        <g fill="#fbe8c6" opacity=".55">
+          <ellipse cx="46" cy="104" rx="1.5" ry="2.5"/><ellipse cx="57" cy="118" rx="1.5" ry="2.5"/>
+          <ellipse cx="108" cy="105" rx="1.5" ry="2.5"/><ellipse cx="100" cy="123" rx="1.5" ry="2.5"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="りんごの森 ホーム">
+      <svg viewBox="0 0 160 160" aria-hidden="true"><use href="#apple"/></svg>
+      <span>りんごの森<small>THE LITTLE APPLE GUIDE</small></span>
+    </a>
+    <nav aria-label="メインナビゲーション">
+      <a href="#varieties">りんご図鑑</a>
+      <a href="#compare">くらべてみる</a>
+      <a href="#tips">おいしい豆知識</a>
+    </nav>
+    <span class="header-note">ひとくちから、ちいさな発見。</span>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span aria-hidden="true">✳</span> ようこそ、りんごの森へ</p>
+        <h1 id="hero-title">りんごって、<br>こんなに<span>いろいろ。</span></h1>
+        <p class="hero-description">あまい子、すっぱい子、シャキッとした子。<br>ひとつひとつ、ちがうおいしさがあるんです。<br>あなたにぴったりのりんごを、見つけにいこう。</p>
+        <a class="button" href="#varieties">お気に入りを見つける <span aria-hidden="true">↗</span></a>
+        <p class="hero-footnote"><span aria-hidden="true">🍃</span> 6つの品種と出会う、小さなりんご図鑑</p>
+      </div>
+      <div class="hero-art">
+        <span class="art-caption">Every apple has a story.</span>
+        <img src="./orchard.svg" alt="木々や花に囲まれた、にっこり笑う赤りんごと黄りんご" width="640" height="500" fetchpriority="high">
+        <span class="art-stamp">ひとつずつ、<br>個性があります。</span>
+      </div>
+    </section>
+
+    <div class="forest-divider" aria-hidden="true"><span>✦</span> ちがいを知ると、もっとおいしい。 <span>✦</span></div>
+
+    <section class="varieties section" id="varieties" aria-labelledby="varieties-title">
+      <div class="section-heading">
+        <p class="chapter">Chapter 01 <span>— Meet the apples</span></p>
+        <h2 id="varieties-title">りんごのなかまたち</h2>
+        <p>どんなおいしさが、お好みですか？</p>
+      </div>
+      <div class="filters" role="group" aria-label="好みでりんごを絞り込む" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">すべてのりんご</button>
+        <button type="button" data-filter="sweet" aria-pressed="false"><span aria-hidden="true">♡</span> あまいのが好き</button>
+        <button type="button" data-filter="tart" aria-pressed="false"><span aria-hidden="true">✧</span> 酸味を楽しみたい</button>
+        <button type="button" data-filter="baking" aria-pressed="false"><span aria-hidden="true">♧</span> お菓子づくりに</button>
+      </div>
+      <p class="result-count" role="status" aria-live="polite" aria-atomic="true">6種類のりんごをご紹介</p>
+      <div class="apple-grid">
+        <article class="apple-card fuji" data-tags="sweet">
+          <div class="card-art"><span class="card-number">01</span><svg aria-hidden="true"><use href="#apple"/></svg><span class="card-label">みんなの人気者</span></div>
+          <div class="card-body">
+            <p class="apple-english">Fuji</p><h3>ふじ</h3>
+            <p class="apple-description">甘みも、酸味も、いいとこどり。<br>果汁たっぷりの、頼れる定番です。</p>
+            <dl class="taste"><div><dt>甘み</dt><dd><span class="dots" aria-hidden="true">●●●●<span>●</span></span><span class="sr-only">5段階中4</span></dd></div><div><dt>酸味</dt><dd><span class="dots" aria-hidden="true">●●<span>●●●</span></span><span class="sr-only">5段階中2</span></dd></div></dl>
+            <div class="card-meta"><span>シャキシャキ</span><span>旬の目安 <b>11〜12月</b></span></div>
+          </div>
+        </article>
+        <article class="apple-card tsugaru" data-tags="sweet">
+          <div class="card-art"><span class="card-number">02</span><svg aria-hidden="true"><use href="#apple"/></svg><span class="card-label">秋のはじまりに</span></div>
+          <div class="card-body">
+            <p class="apple-english">Tsugaru</p><h3>つがる</h3>
+            <p class="apple-description">やさしい甘さと、みずみずしさ。<br>ひと足早く、秋を届けてくれる子。</p>
+            <dl class="taste"><div><dt>甘み</dt><dd><span class="dots" aria-hidden="true">●●●●<span>●</span></span><span class="sr-only">5段階中4</span></dd></div><div><dt>酸味</dt><dd><span class="dots" aria-hidden="true">●<span>●●●●</span></span><span class="sr-only">5段階中1</span></dd></div></dl>
+            <div class="card-meta"><span>みずみずしい</span><span>旬の目安 <b>8〜9月</b></span></div>
+          </div>
+        </article>
+        <article class="apple-card orin" data-tags="sweet">
+          <div class="card-art"><span class="card-number">03</span><svg aria-hidden="true"><use href="#apple"/></svg><span class="card-label">甘い香りにうっとり</span></div>
+          <div class="card-body">
+            <p class="apple-english">Orin</p><h3>王林 <small>おうりん</small></h3>
+            <p class="apple-description">ふわっと香る、黄緑色のりんご。<br>酸味が少なく、甘党さんにぴったり。</p>
+            <dl class="taste"><div><dt>甘み</dt><dd><span class="dots" aria-hidden="true">●●●●●</span><span class="sr-only">5段階中5</span></dd></div><div><dt>酸味</dt><dd><span class="dots" aria-hidden="true">●<span>●●●●</span></span><span class="sr-only">5段階中1</span></dd></div></dl>
+            <div class="card-meta"><span>サクッと軽やか</span><span>旬の目安 <b>10〜11月</b></span></div>
+          </div>
+        </article>
+        <article class="apple-card jonagold" data-tags="tart baking">
+          <div class="card-art"><span class="card-number">04</span><svg aria-hidden="true"><use href="#apple"/></svg><span class="card-label">甘酸っぱさが魅力</span></div>
+          <div class="card-body">
+            <p class="apple-english">Jonagold</p><h3>ジョナゴールド</h3>
+            <p class="apple-description">こくのある甘さに、ほどよい酸味。<br>そのままでも、お菓子にしても。</p>
+            <dl class="taste"><div><dt>甘み</dt><dd><span class="dots" aria-hidden="true">●●●<span>●●</span></span><span class="sr-only">5段階中3</span></dd></div><div><dt>酸味</dt><dd><span class="dots" aria-hidden="true">●●●●<span>●</span></span><span class="sr-only">5段階中4</span></dd></div></dl>
+            <div class="card-meta"><span>ジューシー</span><span>旬の目安 <b>10〜11月</b></span></div>
+          </div>
+        </article>
+        <article class="apple-card kogyoku" data-tags="tart baking">
+          <div class="card-art"><span class="card-number">05</span><svg aria-hidden="true"><use href="#apple"/></svg><span class="card-label">お菓子づくりの相棒</span></div>
+          <div class="card-body">
+            <p class="apple-english">Kogyoku</p><h3>紅玉 <small>こうぎょく</small></h3>
+            <p class="apple-description">きゅんとすっぱい、小さな赤い実。<br>パイやジャムで、香りが花ひらきます。</p>
+            <dl class="taste"><div><dt>甘み</dt><dd><span class="dots" aria-hidden="true">●●<span>●●●</span></span><span class="sr-only">5段階中2</span></dd></div><div><dt>酸味</dt><dd><span class="dots" aria-hidden="true">●●●●●</span><span class="sr-only">5段階中5</span></dd></div></dl>
+            <div class="card-meta"><span>きゅっと緻密</span><span>旬の目安 <b>9〜10月</b></span></div>
+          </div>
+        </article>
+        <article class="apple-card shinano" data-tags="sweet tart">
+          <div class="card-art"><span class="card-number">06</span><svg aria-hidden="true"><use href="#apple"/></svg><span class="card-label">黄金色のさわやかさん</span></div>
+          <div class="card-body">
+            <p class="apple-english">Shinano Gold</p><h3>シナノゴールド</h3>
+            <p class="apple-description">パリッとかじると、甘酸っぱさが。<br>さわやかな香りの、黄金色のりんご。</p>
+            <dl class="taste"><div><dt>甘み</dt><dd><span class="dots" aria-hidden="true">●●●●<span>●</span></span><span class="sr-only">5段階中4</span></dd></div><div><dt>酸味</dt><dd><span class="dots" aria-hidden="true">●●●<span>●●</span></span><span class="sr-only">5段階中3</span></dd></div></dl>
+            <div class="card-meta"><span>パリッとかため</span><span>旬の目安 <b>10〜11月</b></span></div>
+          </div>
+        </article>
+      </div>
+      <p class="section-note">甘み・酸味は、この図鑑での相対的な目安です（5段階）。味や食感、旬は産地・栽培条件・保存状態によって変わります。</p>
+    </section>
+
+    <section class="comparison section" id="compare" aria-labelledby="compare-title">
+      <div class="section-heading">
+        <p class="chapter">Chapter 02 <span>— Side by side</span></p>
+        <h2 id="compare-title">ならべて、くらべて。</h2>
+        <p>それぞれの個性が、ひと目でわかる早見表。</p>
+      </div>
+      <p class="table-hint">小さな画面では、表を横にスクロールできます →</p>
+      <div class="table-scroll" tabindex="0" role="region" aria-label="りんご6品種の比較表（横スクロール可能）">
+        <table>
+          <caption class="sr-only">全6品種の甘み・酸味（5段階の目安）、食感とおすすめの食べ方</caption>
+          <thead><tr><th scope="col">りんごの品種</th><th scope="col">甘み / 5</th><th scope="col">酸味 / 5</th><th scope="col">食感</th><th scope="col">おすすめの楽しみ方</th></tr></thead>
+          <tbody>
+            <tr><th scope="row"><span class="table-dot fuji-dot" aria-hidden="true"></span>ふじ</th><td>4</td><td>2</td><td>シャキシャキ</td><td>そのまま、サラダに</td></tr>
+            <tr><th scope="row"><span class="table-dot tsugaru-dot" aria-hidden="true"></span>つがる</th><td>4</td><td>1</td><td>みずみずしい</td><td>そのまま、ジュースに</td></tr>
+            <tr><th scope="row"><span class="table-dot orin-dot" aria-hidden="true"></span>王林</th><td>5</td><td>1</td><td>サクッと軽やか</td><td>そのまま、ヨーグルトに</td></tr>
+            <tr><th scope="row"><span class="table-dot jonagold-dot" aria-hidden="true"></span>ジョナゴールド</th><td>3</td><td>4</td><td>ジューシー</td><td>そのまま、焼きりんごに</td></tr>
+            <tr><th scope="row"><span class="table-dot kogyoku-dot" aria-hidden="true"></span>紅玉</th><td>2</td><td>5</td><td>きゅっと緻密</td><td>アップルパイ、ジャムに</td></tr>
+            <tr><th scope="row"><span class="table-dot shinano-dot" aria-hidden="true"></span>シナノゴールド</th><td>4</td><td>3</td><td>パリッとかため</td><td>そのまま、サラダに</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="tips section" id="tips" aria-labelledby="tips-title">
+      <div class="section-heading">
+        <p class="chapter">A little note <span>— From the orchard</span></p>
+        <h2 id="tips-title">もっとおいしくなる、豆知識。</h2>
+      </div>
+      <div class="tips-grid">
+        <article><span class="tip-icon" aria-hidden="true">✧</span><h3>選ぶときは、ずっしり。</h3><p>手に持って重みがあり、皮にハリのあるものを。傷や傷みがないかも、そっと見てみましょう。</p></article>
+        <article><span class="tip-icon" aria-hidden="true">❄</span><h3>涼しいところが、好き。</h3><p>乾燥を防ぐためにポリ袋に入れて、冷蔵庫の野菜室へ。ほかの野菜や果物とは、袋を分けて保存しましょう。</p></article>
+        <article><span class="tip-icon" aria-hidden="true">♡</span><h3>皮ごと、楽しんでみる。</h3><p>流水でよく洗って、薄くスライス。皮の食感や香りも楽しめます。芯や種は取り除いてくださいね。</p></article>
+      </div>
+    </section>
+    <aside class="closing-note">
+      <svg aria-hidden="true" viewBox="0 0 160 160"><use href="#apple"/></svg>
+      <p>きょうのりんごが、<br>ちょっと特別になりますように。</p>
+      <span>Find your little favorite.</span>
+    </aside>
+  </main>
+  <footer>
+    <div><a class="footer-brand" href="./">りんごの森</a><p>りんごを知る、りんごを楽しむ、小さな図鑑。</p></div>
+    <div class="footer-right"><p>品種についてもっと知る：<a href="https://www.aomori-ringo.or.jp/">一般社団法人 青森県りんご対策協議会 ↗</a></p><p>イラストはこのサイトのオリジナルです。</p></div>
+  </footer>
+</body>
+</html>

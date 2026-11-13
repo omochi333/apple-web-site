@@ -1,0 +1,15 @@
+{
+  "name": "apple-web-site",
+  "version": "1.0.0",
+  "description": "絵本のような、りんごの品種比較サイト",
+  "private": true,
+  "scripts": {
+    "start": "python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/omochi333/apple-web-site.git"
+  },
+  "keywords": [],
+  "author": ""
+}
